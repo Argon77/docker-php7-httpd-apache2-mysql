@@ -7,10 +7,10 @@ RUN apt-get update && \
 RUN apt-get install -y \
         libxml2-dev
 
+RUN apt-get install libzip-dev -y
+
 RUN /usr/local/bin/docker-php-ext-install mysqli pdo pdo_mysql zip xmlwriter
 RUN apt-get install libssl-dev -y
-
-
 
 RUN /usr/local/bin/docker-php-ext-install zip
 
