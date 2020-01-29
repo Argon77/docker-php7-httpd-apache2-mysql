@@ -18,7 +18,7 @@ mysql:
   ports:
     - "3306:3306"
   environment:
-    - MYSQL_ROOT_PASSWORD=MY_PASSWORD
-    - MYSQL_DATABASE=YOUR_DATABASE_NAME
+    - MYSQL_ROOT_PASSWORD=pitman
+    - MYSQL_DATABASE=pitman-edu
   volumes: 
     - ./etc/mysql:/docker-entrypoint-initdb.d
